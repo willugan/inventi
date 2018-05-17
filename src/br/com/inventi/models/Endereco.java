@@ -14,6 +14,8 @@ public class Endereco {
 
     }
 
+    /* Falta getAll, setAll, construtor cheio e construtor vazio */
+
     public int getCodEndereco() {
         return codEndereco;
     }

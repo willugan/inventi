@@ -8,6 +8,8 @@ public class PessoaFisica extends Usuario {
 
     }
 
+    /* Falta getAll, setAll, construtor cheio e construtor vazio */
+
     public String getCpf()
     {
         return cpf;

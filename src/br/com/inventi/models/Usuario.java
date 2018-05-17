@@ -13,6 +13,8 @@ public class Usuario {
 
     }
 
+    /* Falta getAll, setAll, construtor cheio e construtor vazio */
+
     /* Getters e Setters */
 
     //Codigo usuario

@@ -11,6 +11,8 @@ public class Contato {
 
     }
 
+    /* Falta getAll, setAll, construtor cheio e construtor vazio */
+
     public int getCod_contato() {
         return cod_contato;
     }
