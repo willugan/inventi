@@ -8,7 +8,7 @@ public class Contato {
     private String telefone;
 
     public Contato(){
-        
+
     }
 
     public int getCod_contato() {

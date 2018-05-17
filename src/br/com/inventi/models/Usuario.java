@@ -6,7 +6,8 @@ public class Usuario {
     private String nomeUsuario;
     private String senha;
 
-    public Usuario(){
+    public Usuario()
+    {
 
     }
 
