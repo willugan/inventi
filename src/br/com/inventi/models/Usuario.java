@@ -5,6 +5,8 @@ public class Usuario {
     private String nome;
     private String nomeUsuario;
     private String senha;
+    private Endereco[] endereco;
+
 
     public Usuario()
     {
@@ -57,9 +59,12 @@ public class Usuario {
         this.senha = senha;
     }
 
+    //Atributo de ref como array [Endereco do usuario]
+    public Endereco[] getEndereco() {
+        return endereco;
+    }
 
-
-
-
-
+    public void setEndereco(Endereco[] endereco) {
+        this.endereco = endereco;
+    }
 }

@@ -33,8 +33,8 @@ public class Sessao {
 
 	public String getAll() {
 		return 
-		"Sessão..............." + sessao + "\n" +
-		"Usuário.............." + usuario + "\n" +
+		"Sessao..............." + sessao + "\n" +
+		"Usuario.............." + usuario + "\n" +
 		"Tempo de Entrada....." + tempoEntrada + "\n" +
 		"Tempo de Saida......." + tempoSaida + "\n" +
 		"Tempo de Permanencia." + tempoPermanencia;
