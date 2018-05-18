@@ -8,13 +8,42 @@ public class Endereco {
     private String bairro;
     private String cidade;
     private String uf;
-
-    public Endereco()
-    {
-
+    
+    public Endereco(){
+    	
     }
-
-    /* Falta getAll, setAll, construtor cheio e construtor vazio */
+    
+    public Endereco(int codEndereco, String logradouro, int numero, String cep, String bairro, String cidade, String uf) {
+    	super();
+    	this.codEndereco = codEndereco;
+    	this.logradouro = logradouro;
+    	this.numero = numero;
+    	this.cep = cep;
+    	this.bairro = bairro;
+    	this.cidade = cidade;
+    	this.uf = uf;
+    }
+    
+    public void setAll(int codEndereco, String logradouro, int numero, String cep, String bairro, String cidade, String uf) {
+    	setCodEndereco(codEndereco);
+    	setLogradouro(logradouro);
+    	setNumero(numero);
+    	setCep(cep);
+    	setBairro(bairro);
+    	setCidade(cidade);
+    	setUf(uf);
+    }
+    
+    public String getAll() {
+    	return
+    			"Codigo do endereço.........." + codEndereco + "\n" +
+    			"Logradouro.................." + logradouro + "\n" +
+    			"Numero......................" + numero + "\n" +
+    			"Cep........................." + cep + "\n" +
+    			"Bairro......................" + bairro + "\n" +
+    			"Cidade......................" + cidade + "\n" +
+    			"UF.........................." + uf;
+    }
 
     public int getCodEndereco() {
         return codEndereco;

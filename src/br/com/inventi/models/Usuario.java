@@ -7,17 +7,36 @@ public class Usuario {
     private String senha;
     private Endereco[] endereco;
 
-
     public Usuario()
     {
 
     }
 
-    /* Falta getAll, setAll, construtor cheio e construtor vazio */
-
-    /* Getters e Setters */
-
-    //Codigo usuario
+    public Usuario(int codUsuario, String nome, String nomeUsuario, String senha, Endereco[] endereco) {
+    	this.codUsuario = codUsuario;
+    	this.nome = nome;
+    	this.nomeUsuario = nomeUsuario;
+    	this.senha = senha;
+    	this.endereco = endereco;
+    }    
+    
+    public void setAll(int codUsuario, String nome, String nomeUsuario, String senha, Endereco[] endereco) {
+    	setCodUsuario(codUsuario);
+    	setNome(nome);
+    	setNomeUsuario(nomeUsuario);
+    	setSenha(senha);
+    	setEndereco(endereco);
+    }
+    
+    public String getAll() {
+    	return
+    		"Codigo do Usuario......" + codUsuario + "\n" +
+    		"Nome..................." + nome + "\n" +
+    		"Nome do usuário........" + nomeUsuario + "\n" +
+    		"Senha.................." + senha + "\n" +
+    		"Endereço..............." + endereco.getAll();
+    }
+   
     public int getCodUsuario()
     {
         return codUsuario;
@@ -63,10 +82,11 @@ public class Usuario {
 
     //Atributo de ref como array [Endereco do usuario]
     public Endereco[] getEndereco() {
-        return endereco;
+        return endereco[];
     }
 
     public void setEndereco(Endereco[] endereco) {
-        this.endereco = endereco;
+        this.endereco[] = endereco;
     }
+    
 }
