@@ -8,7 +8,9 @@ public class Sessao {
 	private String tempoSaida;
 	private String tempoPermanencia;
 	
-	
+	public Sessao() {
+		super();
+	}
 	
 	public Sessao(int sessao, Usuario usuario, String tempoEntrada, String tempoSaida, String tempoPermanencia) {
 		super();
@@ -17,10 +19,6 @@ public class Sessao {
 		this.tempoEntrada = tempoEntrada;
 		this.tempoSaida = tempoSaida;
 		this.tempoPermanencia = tempoPermanencia;
-	}
-
-	public Sessao() {
-		super();
 	}
 	
 	public void setAll(int sessao, Usuario usuario, String tempoEntrada, String tempoSaida, String tempoPermanencia) {
@@ -34,38 +32,48 @@ public class Sessao {
 	public String getAll() {
 		return 
 		"Sessao..............." + sessao + "\n" +
-		"Usuario.............." + usuario + "\n" +
+		"Usuario.............." + usuario.getAll() + "\n" +
 		"Tempo de Entrada....." + tempoEntrada + "\n" +
 		"Tempo de Saida......." + tempoSaida + "\n" +
 		"Tempo de Permanencia." + tempoPermanencia;
 	}
+	
 	public int getSessao() {
 		return sessao;
 	}
+	
 	public void setSessao(int sessao) {
 		this.sessao = sessao;
 	}
+	
 	public Usuario getUsuario() {
 		return usuario;
 	}
+	
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+	
 	public String getTempoEntrada() {
 		return tempoEntrada;
 	}
+	
 	public void setTempoEntrada(String tempoEntrada) {
 		this.tempoEntrada = tempoEntrada;
 	}
+	
 	public String getTempoSaida() {
 		return tempoSaida;
 	}
+	
 	public void setTempoSaida(String tempoSaida) {
 		this.tempoSaida = tempoSaida;
 	}
+	
 	public String getTempoPermanencia() {
 		return tempoPermanencia;
 	}
+	
 	public void setTempoPermanencia(String tempoPermanencia) {
 		this.tempoPermanencia = tempoPermanencia;
 	}

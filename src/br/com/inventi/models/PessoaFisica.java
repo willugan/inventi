@@ -7,6 +7,20 @@ public class PessoaFisica extends Usuario {
     {
 
     }
+    
+    public PessoaFisica(String cpf) {
+    	super();
+    	this.cpf = cpf;
+    }
+    
+    public void setAll(String cpf) {
+    	setCpf(cpf);
+    }
+    
+    public String getAll() {
+    	return
+    			"CPF: " + cpf;
+    }
 
     /* Falta getAll, setAll, construtor cheio e construtor vazio */
 
