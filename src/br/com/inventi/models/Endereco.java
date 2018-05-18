@@ -1,7 +1,10 @@
 package br.com.inventi.models;
 
+import java.util.Arrays;
+
 public class Endereco {
     private int codEndereco;
+    private char endereco[] = null;
     private String logradouro;
     private int numero;
     private String cep;
@@ -36,7 +39,7 @@ public class Endereco {
     
     public String getAll() {
     	return
-    			"Codigo do endereço.........." + codEndereco + "\n" +
+    			"Codigo do endereï¿½o.........." + codEndereco + "\n" +
     			"Logradouro.................." + logradouro + "\n" +
     			"Numero......................" + numero + "\n" +
     			"Cep........................." + cep + "\n" +
@@ -51,6 +54,10 @@ public class Endereco {
 
     public void setCodEndereco(int codEndereco) {
         this.codEndereco = codEndereco;
+    }
+
+    public Endereco(char endereco[]) {
+        this.endereco = Arrays.copyOf(endereco, endereco.length);
     }
 
     public String getLogradouro() {
